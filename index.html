@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApplicationModule">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src='lodash.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src='angular-simple-logger-master/dist/angular-simple-logger.min.js'></script>
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="angular-google-maps/dist/angular-google-maps.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        .angular-google-map-container { height: 400px; }
+    </style>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        {{test}}
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    </div>
+</body>
+</html>
